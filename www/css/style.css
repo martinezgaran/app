@@ -1,0 +1,62 @@
+html, body{
+	height: 100%;
+}
+
+body{
+	background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+}
+
+nav{
+	padding: 15px;
+	background: rgba(255,255,255,0.5);
+}
+.contenido{
+	width: 80%
+	margin: 0 auto;
+}
+
+.foto{
+	margin: 0 auto;
+	width: 40%;
+}
+
+.imagen{
+	height: auto;
+	max-width: 100%;
+}
+
+
+.menu li a{
+	font-family: verdana;
+	color: black;
+	font-size: 18pt;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	text-decoration: overline;
+}
+
+
+
+.menu{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+
+
+@media screen and (max-width: 500px){
+
+	.menu{
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+	}
+
+	.menu li{
+		border-bottom: solid 0.1em #000;
+		text-align: center;
+	}
+}
